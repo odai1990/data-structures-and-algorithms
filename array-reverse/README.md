@@ -5,7 +5,7 @@
 
 ## Whiteboard Process
 
-![array-reverse](images/codechalange1.jpg)
+![array-reverse](array-reverse.jpg)
 
 
 **To see picture in big size  [Zoom](https://miro.com/app/board/o9J_lA5v1eA=/)**

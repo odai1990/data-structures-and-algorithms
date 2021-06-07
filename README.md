@@ -9,5 +9,5 @@
 
 | Name      | Link |
 | :---        |    :----:   | 
-| Code Challenge (array-reverse) : Class 01    | [array-reverse](array-reverse/ch1.md)      | 
+| Code Challenge (array-reverse) : Class 01    | [array-reverse](array-reverse/README.md)      | 
 | Code Challenge (array-shift) : Class 02    | [array-shift](array-shift/README.md)      | 
