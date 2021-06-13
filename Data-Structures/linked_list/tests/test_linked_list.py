@@ -46,3 +46,51 @@ def test_append():
   lst_four.insert('apple')
   lst_four.append('banana')
   assert lst_four.head.next.value == 'banana'
+
+def test_insert_after():
+  lst_four = LinkedList()
+  lst_four.insert('apple')
+  lst_four.append('banana')
+
+  #adding to the end of a linkedlist
+  lst_four.insertAfter('banana','orange')
+  assert lst_four.head.next.next.value == 'orange'  
+
+  #add multiple nodes to the end of a linked list
+  lst_four.insertAfter('orange','strobary')
+  lst_four.insertAfter('strobary','watermelon')
+  assert lst_four.head.next.next.next.value == 'strobary' 
+  assert lst_four.head.next.next.next.next.value == 'watermelon' 
+
+  #add nodes to the None location of a linked list
+  assert lst_four.insertAfter('','') == 'could not find that element'
+
+  #adding to the middle of a linkedlist
+  lst_four.insertAfter('orange','melon')
+  assert lst_four.head.next.next.next.value == 'melon'  
+
+
+
+def test_insert_before():
+  lst_four = LinkedList()
+  lst_four.insert('apple')
+  lst_four.append('banana')
+
+  #adding before of  end of a linkedlist
+  lst_four.insertBefore('banana','orange')
+  assert lst_four.head.next.value == 'orange'  
+
+
+
+  # #add nodes to the begin of a linked list
+  lst_four.insertBefore('apple','watermelon')
+  assert lst_four.head.value == 'watermelon'
+
+ #add nodes to the begin of a linked list
+  assert lst_four.insertBefore('','') == 'could not find that element'
+
+  #adding to the middle of a linkedlist
+  lst_four.insertBefore('orange','melon')
+  assert lst_four.head.next.next.value == 'melon'  
+
+
