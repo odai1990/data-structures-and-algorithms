@@ -4,7 +4,7 @@ class Node:
         self.next = None
 
     def __repr__(self):
-            return f'{self.value}'
+        return f'{self.value}'
 
 
 class LinkedList:
@@ -60,3 +60,45 @@ class LinkedList:
         last.next = new_node
         self.length += 1
 
+
+    '''Iterates through of a Linked List and insert a value before location'''
+    def insertBefore(self,value, newVal):
+        new_node = Node(newVal)
+        current = self.head
+        prvs=None
+
+        while current:
+            if current.value == value:              
+                if self.head==current:
+                    new_node.next,self.head = current,new_node                   
+                    self.length += 1
+                    return
+                else:                    
+                    new_node.next,prvs.next = current,new_node                    
+                    self.length += 1
+                    return
+            else:
+                prvs=current
+                current = current.next
+        return 'could not find that element'
+        
+
+            
+
+        
+    '''Iterates through of a Linked List and insert a value after location'''  
+    def insertAfter(self,value, newVal):
+            current = self.head
+            new_node = Node(newVal)                               
+            while current:               
+                if current.value == value:                                      
+                    current.next,new_node.next=new_node,current.next
+                    self.length += 1
+                    return
+                current = current.next
+            return 'could not find that element'
+            
+               
+
+
+                            
