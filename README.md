@@ -13,3 +13,4 @@
 | Code Challenge (array-shift) : Class 02    | [array-shift](array-shift/README.md)      | 
 | Code Challenge (array-binary-search) : Class 03    | [array-binary-search](array-binary-search/README.md)      | 
 | Code Challenge (Linked List Implementation) : Class 04 && class05   | [Linked List Implementation](Data-Structures/README.md)      | 
+| Code Challenge (Linked List Implementation) : Class 07   | [Linked List Implementation](Data-Structures/README2.md)      | 
