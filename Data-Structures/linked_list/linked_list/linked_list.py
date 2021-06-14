@@ -98,7 +98,29 @@ class LinkedList:
                 current = current.next
             return 'could not find that element'
             
-               
 
 
-                            
+
+
+    '''Iterates through of a Linked List to get value of spesefic location'''          
+    def ll_kth_from_end(self,value):
+        current = self.head
+        index=0
+
+        while current:
+            index+=1           
+            current = current.next
+        else:
+            current = self.head
+        if (index<value or None):
+            raise Exception('out of range')
+
+        for i in range(index-value-1):  
+            current = current.next
+
+        return current.value
+        
+
+if __name__ == "__main__":
+    pass
+ 

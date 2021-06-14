@@ -3,12 +3,19 @@
 
 ## Challenge Summary
 Create a Node class that has properties for the value stored in the Node, and a pointer to the next Node with inserting methods.
+
+
 ## Whiteboard Process
+
+
+
 ![ll-insertions](linked_list/ll-insertions1.PNG)
 
 ![ll-insertions](linked_list/ll-insertions2.PNG)
 
 ![ll-insertions](linked_list/ll-insertions3.PNG)
+
+
 ## Solution
 
 ```
@@ -68,4 +75,5 @@ I used two classes and used one class for Node and other to create Object form N
 `__append__`: it adds a value to the end.
 `__insertBefore__`: it add a new value before a certain value.
 `__insertAfter__`: it add a new value after a certain value.
+
 

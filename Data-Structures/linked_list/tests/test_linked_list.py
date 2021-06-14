@@ -4,7 +4,7 @@ from linked_list import __version__
 def test_version():
     assert __version__ == '0.1.0'
 
-
+import pytest
 from linked_list.linked_list import  Node,LinkedList
 
 def test_list_creation():
@@ -125,8 +125,65 @@ def test_insert_after_empty():
 
 
 
+######################Code Challenge: Class 07 test####################
+
+
+
+def test_kth_method_out_of_range():
+  #Where k is greater than the length of the linked list
+  lst_seven = LinkedList()
+  lst_seven.insert(1)
+  lst_seven.append(2)
+  lst_seven.append(3)
+  lst_seven.append(4)
+  lst_seven.append(5)    
+  with pytest.raises(Exception):    
+    lst_seven.ll_kth_from_end(6)
+
+
+def test_kth_method_negative():
+  #Where k is not a positive integer
+  lst_seven = LinkedList()
+  lst_seven.insert(1)
+  lst_seven.append(2)
+  lst_seven.append(3)
+  lst_seven.append(4)
+  lst_seven.append(5)    
+  with pytest.raises(Exception):    
+    lst_seven.ll_kth_from_end(-2)
+
+
+
+def test_kth_method_same_as_length():
+  #Where k and the length of the list are the same
+  lst_seven = LinkedList()
+  lst_seven.insert(1)
+  lst_seven.append(2)
+  lst_seven.append(3)
+  lst_seven.append(4)
+  lst_seven.append(5)    
+  assert lst_seven.ll_kth_from_end(5) == 1
 
 
 
 
+def test_kth_method_length_one():
+  #Where the linked list is of a size 1
+  lst_seven = LinkedList()
+  lst_seven.insert(1)  
+  assert lst_seven.ll_kth_from_end(1) == 1
 
+
+
+def test_kth_method_middel():
+  #'Happy Path' where k is not at the end, but somewhere in the middle of the linked list
+  lst_seven = LinkedList()
+  lst_seven.insert(1)
+  lst_seven.append(2)
+  lst_seven.append(3)
+  lst_seven.append(4)
+  lst_seven.append(5)   
+  assert lst_seven.ll_kth_from_end(2) == 3
+    
+    
+ 
