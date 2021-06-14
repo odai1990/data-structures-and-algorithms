@@ -1,8 +1,9 @@
-# from linked_list import __version__
+from linked_list import __version__
 
 
-# def test_version():
-#     assert __version__ == '0.1.0'
+def test_version():
+    assert __version__ == '0.1.0'
+
 
 from linked_list.linked_list import  Node,LinkedList
 
@@ -47,50 +48,85 @@ def test_append():
   lst_four.append('banana')
   assert lst_four.head.next.value == 'banana'
 
-def test_insert_after():
-  lst_four = LinkedList()
-  lst_four.insert('apple')
-  lst_four.append('banana')
 
-  #adding to the end of a linkedlist
-  lst_four.insertAfter('banana','orange')
-  assert lst_four.head.next.next.value == 'orange'  
 
+######################Code Challenge: Class 06 test####################
+
+def test_append_to_end():
+  #add a node to the end of the linked list
+    lst_four = LinkedList()
+    lst_four.append('banana')
+    assert lst_four.head.value == 'banana' 
+
+
+def test_append_to_multiple_end():
   #add multiple nodes to the end of a linked list
-  lst_four.insertAfter('orange','strobary')
-  lst_four.insertAfter('strobary','watermelon')
-  assert lst_four.head.next.next.next.value == 'strobary' 
-  assert lst_four.head.next.next.next.next.value == 'watermelon' 
-
-  #add nodes to the None location of a linked list
-  assert lst_four.insertAfter('','') == 'could not find that element'
-
-  #adding to the middle of a linkedlist
-  lst_four.insertAfter('orange','melon')
-  assert lst_four.head.next.next.next.value == 'melon'  
+    lst_four = LinkedList()
+    lst_four.append('banana')
+    lst_four.append('apple')
+    assert lst_four.head.value == 'banana' 
+    assert lst_four.head.next.value == 'apple' 
 
 
-
-def test_insert_before():
+def test_insert_before_middle():
+  #insert a node before a node located i the middle of a linked list
   lst_four = LinkedList()
   lst_four.insert('apple')
-  lst_four.append('banana')
-
-  #adding before of  end of a linkedlist
-  lst_four.insertBefore('banana','orange')
-  assert lst_four.head.next.value == 'orange'  
+  lst_four.append('banana')  
+  lst_four.insertBefore('banana','melon')
+  assert lst_four.head.next.value == 'melon' 
 
 
-
-  # #add nodes to the begin of a linked list
+def test_insert_before_begining():
+  # insert a node before the first node of a linked list
+  lst_four = LinkedList()
+  lst_four.insert('apple')
+  lst_four.append('banana')  
   lst_four.insertBefore('apple','watermelon')
   assert lst_four.head.value == 'watermelon'
 
+
+
+def test_insert_before_empty():
  #add nodes to the begin of a linked list
+  lst_four = LinkedList()
   assert lst_four.insertBefore('','') == 'could not find that element'
 
-  #adding to the middle of a linkedlist
-  lst_four.insertBefore('orange','melon')
-  assert lst_four.head.next.next.value == 'melon'  
+
+
+
+def test_insert_after_middle():
+  #insert after a node in the middle of the linked list
+  lst_four = LinkedList()
+  lst_four.insert('apple')
+  lst_four.append('banana')
+  lst_four.insertAfter('banana','strobary')
+  lst_four.insertAfter('strobary','watermelon')
+  assert lst_four.head.next.next.next.value == 'watermelon' 
+  assert lst_four.head.next.next.value == 'strobary'
+  assert '{apple}-> {banana}-> {strobary}-> {watermelon}-> '== lst_four.__str__()
+
+
+
+def test_insert_after_end():
+  #insert a node after the last node of the linked list
+  lst_four = LinkedList()
+  lst_four.insert('apple')
+  lst_four.append('banana')
+  lst_four.insertAfter('banana','strobary')  
+  assert lst_four.head.next.next.value == 'strobary'
+  assert '{apple}-> {banana}-> {strobary}-> '== lst_four.__str__()
+
+
+def test_insert_after_empty():
+    #add nodes to the None location of a linked list
+    lst_four = LinkedList()
+    assert lst_four.insertAfter('','') == 'could not find that element'
+
+
+
+
+
+
 
 
