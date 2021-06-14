@@ -4,7 +4,7 @@ class Node:
         self.next = None
 
     def __repr__(self):
-        return f'{self.value}'
+        return '{}'.format(self.value)
 
 
 class LinkedList:
@@ -40,7 +40,7 @@ class LinkedList:
         values = ''
         current = self.head
         while current:
-            values += f'{{{str(current.value)}}}-> '
+            values += '{{{}}}-> '.format(str(current.value))
             current = current.next
         print(values)
         return values
