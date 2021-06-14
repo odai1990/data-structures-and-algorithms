@@ -112,13 +112,15 @@ class LinkedList:
             current = current.next
         else:
             current = self.head
-        if (index<value):
+        if (index<value or None):
             raise Exception('out of range')
 
-        for i in range(index-value):  
+        for i in range(index-value-1):  
             current = current.next
 
         return current.value
+        
 
-
-                            
+if __name__ == "__main__":
+    pass
+ 
