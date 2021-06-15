@@ -1,3 +1,4 @@
+
 class Node:
     def __init__(self, value):
         self.value = value
@@ -42,7 +43,7 @@ class LinkedList:
         while current:
             values += '{{{}}}-> '.format(str(current.value))
             current = current.next
-        print(values)
+        
         return values
 
     '''Iterates to the end of a Linked List and appends a value'''
@@ -119,8 +120,46 @@ class LinkedList:
             current = current.next
 
         return current.value
+
+
+    def zipLists(self,LinkedList_one, LinkedList_two):
+        values = ''
+        values2 = ''
+      
+        # LinkedList_one.head.next=LinkedList_two
+        # LinkedList_two=None
         
+        current_a = LinkedList_one.head  
+        current_b = LinkedList_two.head  
+        t = Node(current_a)  
+        t.next=(current_b)    
+        while current_a:
+
+            t.next.next=current_b.next
+            current_b = current_b.next
+            
+            t.next.next=current_a.next
+            current_a = current_a.next
+            values += '{{{}}}-> '.format(str(t))
+            # values2 += '{{{}}}-> '.format(str(current2.value))
+            
+            t = t.next           
+        return f'{values} ////// {values2}'
+
+
 
 if __name__ == "__main__":
-    pass
+    lst_four = LinkedList()
+    lst_four.append('apple')
+    lst_four.append('banana')
+    lst_four.append('strobary')
+    lst_four.append('watermelon')
+    lst_seven = LinkedList()
+    lst_seven.insert(1)
+    lst_seven.append(2)
+    lst_seven.append(3)
+    lst_seven.append(4)
+    sss=LinkedList()
+    print(sss.zipLists(lst_four,lst_seven))
+    
  
