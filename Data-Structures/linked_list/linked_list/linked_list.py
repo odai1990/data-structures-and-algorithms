@@ -6,7 +6,7 @@ class Node:
 
     def __repr__(self):
         return '{}'.format(self.value)
-
+    
 
 class LinkedList:
     def __init__(self):
@@ -122,30 +122,33 @@ class LinkedList:
         return current.value
 
 
-    def zipLists(self,LinkedList_one, LinkedList_two):
-        values = ''
-        values2 = ''
-      
-        # LinkedList_one.head.next=LinkedList_two
-        # LinkedList_two=None
+    def zipLists(self,LinkedList_one, LinkedList_two):      
         
         current_a = LinkedList_one.head  
         current_b = LinkedList_two.head  
-        t = Node(current_a)  
-        t.next=(current_b)    
-        while current_a:
 
-            t.next.next=current_b.next
-            current_b = current_b.next
-            
-            t.next.next=current_a.next
-            current_a = current_a.next
-            values += '{{{}}}-> '.format(str(t))
-            # values2 += '{{{}}}-> '.format(str(current2.value))
-            
-            t = t.next           
-        return f'{values} ////// {values2}'
+        new_list=LinkedList()        
+        while True:
 
+            if(not current_a is None):
+                new_list.append(current_a.value)
+                current_a = current_a.next            
+           
+            
+            if(not current_b is None):
+                new_list.append(current_b.value) 
+                current_b = current_b.next         
+           
+            
+            if(current_b is None and current_a is None):
+                break         
+            
+     
+        return new_list.__str__()       
+      
+           
+            
+      
 
 
 if __name__ == "__main__":
@@ -159,7 +162,9 @@ if __name__ == "__main__":
     lst_seven.append(2)
     lst_seven.append(3)
     lst_seven.append(4)
+
     sss=LinkedList()
     print(sss.zipLists(lst_four,lst_seven))
+  
     
  
