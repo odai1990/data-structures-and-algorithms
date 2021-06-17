@@ -9,11 +9,11 @@ Create a Node class that has properties for the value stored in the Node, and a 
 
 **Class 08 **
 
-![ll-insertions](challenges/ll-insertions1_8.PNG)
+![ll-insertions](/challenges/ll-insertions1_8.PNG)
 
-![ll-insertions](challenges/ll-insertions2_8.PNG)
+![ll-insertions](/challenges/ll-insertions2_8.PNG)
 
-![ll-insertions](challenges/ll-insertions3_8.PNG)
+![ll-insertions](/challenges/ll-insertions3_8.PNG)
 
 
 
