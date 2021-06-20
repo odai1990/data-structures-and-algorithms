@@ -15,5 +15,5 @@
 | Code Challenge (Linked List Implementation) : Class 04 to Class 07  | [Linked List Implementation](Data-Structures/linked_list/README.md)      | 
 | Code Challenge (Linked List Implementation) : Class 08  | [Linked List Implementation](challenges/README.md)      | 
 | Code Challenge (Stack and a Queue Implementation) : Class 10  | [Stack and a Queue Implementation](stacks_and_queues/README.md)      | 
-| Code Challenge (PseudoQueue) : Class 11  | [PseudoQueue ](QueueWithStacks/README.md)      | 
+| Code Challenge (PseudoQueue) : Class 11  | [PseudoQueue ](challenges/QueueWithStacks/README.md)      | 
 
