@@ -2,11 +2,11 @@
 - Create a brand new PseudoQueue class. Do not use an existing Queue. Instead, this PseudoQueue class will implement our standard queue interface , but will internally only utilize 2 Stack objects.
 
 ## Whiteboard Process
-![whiteboard](/challenges/QueueWithStacks/1.PNG)
+![whiteboard](/challenges/QueueWithStacks/queue-with-stacks_1.PNG)
 
-![whiteboard](/challenges/QueueWithStacks/2.PNG)
+![whiteboard](/challenges/QueueWithStacks/queue-with-stacks_2.PNG)
 
-![whiteboard](/challenges/QueueWithStacks/3.PNG)
+![whiteboard](/challenges/QueueWithStacks/queue-with-stacks_3.PNG)
 
 
 ## Approach & Efficiency
