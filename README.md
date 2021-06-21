@@ -1,6 +1,6 @@
 # data-structures-and-algorithms
 
-![img](array-reverse/Python.svg.png)
+![img](challenges/array-reverse/Python.svg.png)
 
 ## All Challanges code in 401
 
