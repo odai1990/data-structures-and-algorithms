@@ -17,5 +17,5 @@
 | Code Challenge (Stack and a Queue Implementation) : Class 10  | [Stack and a Queue Implementation](Data-Structures/stacks_and_queues/README.md)      | 
 | Code Challenge (PseudoQueue) : Class 11  | [PseudoQueue ](challenges/QueueWithStacks/README.md)      | 
 | Code Challenge (AnimalShelter) : Class 12  | [AnimalShelter  ](challenges/fifo_animal_shelter/README.md)      | 
-| Code Challenge (Multi-bracket Validation) : Class 13  | [AnimalShelter  ](challenges/multi_bracket_validation/README.md)      | 
+| Code Challenge (Multi-bracket Validation) : Class 13  | [Multi-bracket Validation ](challenges/multi_bracket_validation/README.md)      | 
 
