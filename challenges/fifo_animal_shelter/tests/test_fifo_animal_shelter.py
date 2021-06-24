@@ -40,8 +40,8 @@ def test_dequeue_from_shelter_dog_or_cat():
     shelter.enqueue(dog1)
     shelter.enqueue(cat2)
     shelter.enqueue(dog2)
+    assert isinstance(shelter.dequeue('dog'), Dog)  
     assert shelter.dequeue('cat') != None     
-    assert shelter.dequeue('dog') != None
     assert isinstance(shelter.dequeue('cat'), Cat) 
     assert isinstance(shelter.dequeue('dog'), Dog)
 

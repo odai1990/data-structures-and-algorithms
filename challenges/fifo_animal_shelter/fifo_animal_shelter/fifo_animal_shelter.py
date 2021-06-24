@@ -87,6 +87,8 @@ class AnimalShelter:
     '''
     def __init__(self):
         self.shelter=Queue()
+        self.deteting=Queue()
+        self.temp=''
     
     def enqueue(self,animal):
         '''
@@ -101,10 +103,70 @@ class AnimalShelter:
         '''
         this method to dequeue values but test if they cat or dog 
         '''
+      
+
+        current=self.shelter.front
+       
+
         if pref.lower()=='cat' or pref.lower()=='dog':
-            return self.shelter.dequeue()
+
+            while self.shelter.front:
+                              
+                if pref.lower()=='cat':
+                                                  
+                    if isinstance(self.shelter.front.value, Cat):
+                    
+                        self.temp=self.shelter.dequeue()
+                        
+                        break                          
+                    else:
+                        if(self.shelter.front==None):
+                            break
+                        self.deteting.enqueue(self.shelter.dequeue())    
+
+                elif pref.lower()=='dog':
+                    if isinstance(self.shelter.front.value, Dog):                    
+                        self.temp=self.shelter.dequeue()                        
+                        break                          
+                    else:
+                        if(self.shelter.front==None):
+                            break
+                        self.deteting.enqueue(self.shelter.dequeue())    
+            
+                # current=current.next
+
+
+
+            #### instad of using another loop i will use refrencing pointer
+            
+            if self.deteting.front==None:
+                return self.temp
+            elif self.shelter.front==None:
+                self.shelter.front=self.deteting.front
+                self.shelter.rear=self.deteting.rear
+                self.deteting.front=None
+                self.deteting.rear=None
+                return self.temp
+            else:
+                
+                self.shelter.front.next=self.deteting.rear
+                self.shelter.front=self.deteting.front
+                self.deteting.front=None
+                self.deteting.rear=None
+                print(f'{self.shelter}shelter')    
+                print(f'{self.deteting}deleting')   
+                return self.temp
+
+                
+            ####
         else:
             return None
+            # print(f'{self.shelter}fffffffffffffffffffff')    
+            # print(self.deteting)   
+                    
+                    
+                
+       
 
 class Cat:
     '''
@@ -121,5 +183,4 @@ class Dog:
     def __init__(self,name):
         self.name=name
 
-if __name__=='__main__':
-    pass
+
