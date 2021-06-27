@@ -4,7 +4,7 @@
 # def test_version():
 #     assert __version__ == '0.1.0'
 
-
+import pytest
 from trees.trees import BinaryTree, BinarySearchTree, Node
 def test_tree_instance():
     tree = BinaryTree()
@@ -47,6 +47,22 @@ def test_in_order():
     actual = tree.in_order()
 
     assert expected == actual
+
+
+def test_find_max():
+
+    tree = BinarySearchTree()
+    tree.add(10)
+    tree.add(5)
+    tree.add(15)
+    tree.add(-20)
+    tree.add(1)
+ 
+    assert tree.find_maximum_value()==15
+
+
+
+
 
 
 
