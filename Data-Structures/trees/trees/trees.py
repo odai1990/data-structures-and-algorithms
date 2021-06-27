@@ -58,6 +58,24 @@ class BinaryTree:
 
       return results
 
+      
+    def find_maximum_value(self):
+      root=self.root
+      max=0
+
+      def _search(node):
+        print('time')
+        nonlocal max
+        if node.value>max:
+          max=node.value
+        if node.left:
+          _search(node.left)
+        if node.right:
+          _search(node.right)
+        
+      _search(root)
+      return max
+
 
 class BinarySearchTree(BinaryTree):
 
