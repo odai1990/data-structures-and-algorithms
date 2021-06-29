@@ -184,3 +184,13 @@ class Dog:
         self.name=name
 
 
+if __name__=='__main__':
+    shelter = AnimalShelter()
+    print(shelter.enqueue(Dog('dog1')))
+    print(shelter.enqueue(Cat('cat1')))
+    print(shelter.enqueue(Cat('cat2')))
+    print(shelter.enqueue(Cat('cat3')))
+    print(shelter.enqueue(Dog('Dog2')))
+    print(shelter.dequeue('dog').name)
+    print(shelter.dequeue('dog').name)
+    

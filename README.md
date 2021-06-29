@@ -19,5 +19,6 @@
 | Code Challenge (AnimalShelter) : Class 12  | [AnimalShelter  ](challenges/fifo_animal_shelter/README.md)      | 
 | Code Challenge (Multi-bracket Validation) : Class 13  | [Multi-bracket Validation ](challenges/multi_bracket_validation/README.md)      | 
 | Code Challenge (trees) : Class 15  | [trees](Data-Structures/trees/README.md)      | 
+| Code Challenge (tree-fizz-buzz) : Class 18  | [tree-fizz-buzz](challenges/tree-fizz-buzz/README.md)      | 
 
 
