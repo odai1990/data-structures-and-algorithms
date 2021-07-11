@@ -20,6 +20,6 @@
 | Code Challenge (Multi-bracket Validation) : Class 13  | [Multi-bracket Validation ](challenges/multi_bracket_validation/README.md)      | 
 | Code Challenge (trees) : Class 15  | [trees](Data-Structures/trees/README.md)      | 
 | Code Challenge (tree-fizz-buzz) : Class 18  | [tree-fizz-buzz](challenges/tree-fizz-buzz/README.md)      | 
-| Code Challenge (Insertion_Sort) : Class 26  | [tree-fizz-buzz](challenges/Insertion_Sort/README.md)      | 
+| Code Challenge (Insertion_Sort) : Class 26  | [Insertion_Sort](challenges/Insertion_Sort/README.md)      | 
 
 
