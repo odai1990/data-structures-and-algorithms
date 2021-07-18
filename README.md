@@ -23,6 +23,7 @@
 | Code Challenge (Insertion_Sort) : Class 26  | [Insertion_Sort](challenges/Insertion_Sort/README.md)      | 
 | Code Challenge (Merge Sort) : Class 27  | [Merge Sort](challenges/merge_sort/README.md)      |
 | Code Challenge (Quick Sort) : Class 28  | [Quick_Sort](challenges/quick_sort/README.md)      | 
+| Code Challenge (Hash Tables) : Class 30  | [Hash Tables](Data-Structures/Hashtable/README.md)      | 
 
 
 
