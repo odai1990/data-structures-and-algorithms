@@ -5,11 +5,11 @@
 ## Whiteboard Process
 
 
-![Repeated_Word](/challenges/repeated_word/repeated_word_1.PNG)
+![Repeated_Word](/challenges/repeated-word/repeated_word_1.PNG)
 
-![Repeated_Word](/challenges/repeated_word/repeated_word_2.PNG)
+![Repeated_Word](/challenges/repeated-word/repeated_word_2.PNG)
 
-![Repeated_Word](/challenges/repeated_word/repeated_word_3.PNG)
+![Repeated_Word](/challenges/repeated-word/repeated_word_3.PNG)
 
 ## Approach & Efficiency
 Big O
