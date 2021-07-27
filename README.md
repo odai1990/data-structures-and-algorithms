@@ -25,6 +25,8 @@
 | Code Challenge (Quick Sort) : Class 28  | [Quick_Sort](challenges/quick_sort/README.md)      | 
 | Code Challenge (Hash Tables) : Class 30  | [Hash Tables](Data-Structures/Hashtable/README.md)      | 
 | Code Challenge (Repeated Word) : Class 31  | [Repeated Word](challenges/repeated-word/README.md)      | 
+| Code Challenge (Hashmap Tree Intersection) : Class 32  | [Hashmap Tree Intersection](challenges//hashmap-tree-intersection/README.md)      | 
+
 
 
 
