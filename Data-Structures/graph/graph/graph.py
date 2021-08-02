@@ -3,6 +3,7 @@ from graph.vertix import *
 from graph.edge import *
 
 
+
 class Graph:    
     def __init__(self):
         self.adjacency_list = {}
@@ -46,6 +47,7 @@ class Graph:
                 output += ' -> ' + edge.vertix.value             
             output += '\n'
         return output
+
 
 
 
