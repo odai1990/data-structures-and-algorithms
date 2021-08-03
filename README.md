@@ -32,6 +32,6 @@
 | Code Challenge (Graph Business Trip) : Class 36  | [Graph Business Trip](challenges/graph_business_trip/README.md)      | 
 
 
-
+ss
 
 
