@@ -29,6 +29,7 @@
 | Code Challenge (Hashmap Left Join) : Class 33  | [Hashmap Left Join](challenges/hashmap_left_join/README.md)      | 
 | Code Challenge (Graph) : Class 34  | [Graph](Data-Structures/graph/README.md)      | 
 | Code Challenge (Graph Breadth First) : Class 35  | [Graph Breadth First](challenges/graph_breadth_first/README.md)      | 
+| Code Challenge (Graph Business Trip) : Class 36  | [Graph Business Trip](challenges/graph_business_trip/README.md)      | 
 
 
 
