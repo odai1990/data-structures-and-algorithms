@@ -1,7 +1,7 @@
 from graph.graph import *
 from graph.vertix import *
 from graph.edge import *
-
+from graph.stack import *
 
 
 class Graph:    
@@ -49,6 +49,19 @@ class Graph:
         return output
 
 
+    def depth_first(self, start_node):
+          stack = Stack()
+          stack.push(start_node)
+          visited =[]
+          while not stack.is_empty():
+            vertex = stack.pop()
+            if vertex.value in visited:
+                continue
+          
+            visited.append(vertex.value)
+            for neighbor in self.adjacency_list[vertex]:
+                stack.push(neighbor.vertix)
+          return visited
 
 
 if __name__ == '__main__':
