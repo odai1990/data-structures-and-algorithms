@@ -1,6 +1,14 @@
 # Challenge
 
 - Implement a Graph. with Hash Map
+# WhiteBoard
+
+** Code Challane Class 38**
+![Depth-First](Depth_First_1.PNG)
+
+![Depth-First](Depth_First_2.PNG)
+
+![Depth-First](Depth_First_3.PNG)
 
 # Approach & Efficiency
 

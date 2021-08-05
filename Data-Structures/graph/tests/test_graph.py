@@ -52,15 +52,28 @@ def test_empty_graph():
   
     assert graph.get_nodes()== None
 
-    
+
+def test_depth_first():
+    graph = Graph()
+    A = graph.add_node('A')
+    B = graph.add_node('B')
+    C = graph.add_node('C')
+    G = graph.add_node('G')
+    D = graph.add_node('D')
+    F = graph.add_node('F')   
+    H = graph.add_node('H')   
+    E = graph.add_node('E')   
+  
+    graph.add_edge(A, D,150)
+    graph.add_edge(A, B,82)   
+    graph.add_edge(B, C,42)
+    graph.add_edge(C, G,105)
+    graph.add_edge(D, F,26)
+    graph.add_edge(D, H,105)
+    graph.add_edge(D, E,99)
+    graph.add_edge(F, H,73)
+    assert graph.depth_first(A)==['A', 'B', 'C', 'G', 'D', 'E', 'H', 'F']
 
 
 
 
-#    graph = Graph()
-#     a = graph.add_node('a')
-#     b = graph.add_node('b')
-#     c = graph.add_node('c')
-#     d = graph.add_node('d')
-#     e = graph.add_node('e')
-#     f = graph.add_node('f')  
